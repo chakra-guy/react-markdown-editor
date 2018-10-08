@@ -1,0 +1,52 @@
+/* side-bar */
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  background-color: #f9f9fc;
+  height: 100%;
+}
+
+.saved-notes {
+
+}
+
+.note {
+  width: 100%;
+  padding: 12px;
+}
+
+/* editor-view */
+
+.editor-view > .markdown-editor {
+  background-color: #f9f9fc;
+  resize: none;
+  margin: 0px;
+  width: 100%;
+  padding: 18px 12px;
+  min-height: 3.4em;
+  height: 3.4em;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* presentation-view */
+
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  color: #1f2021;
+  min-height: 1.5em;
+  margin-left: .8em;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+  content: '#';
+  position: absolute;
+  bottom: 0;
+  left: -0.8em;
+  opacity: 0.3;
+}
