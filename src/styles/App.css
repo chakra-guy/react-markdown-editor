@@ -13,9 +13,22 @@
 
 }
 
-.note {
+.note, .add-note {
   width: 100%;
   padding: 12px;
+}
+
+.delete-note {
+  float: right;
+  cursor: pointer;
+}
+
+/* Header */
+
+.title-input {
+  width: 100%;
+  border: 0;
+  outline: none;
 }
 
 /* editor-view */
@@ -40,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #1f2021;
   min-height: 1.5em;
-  margin-left: .8em;
+  margin-left: .8em !important;
 }
 
 h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
   content: '#';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: -0.8em;
   opacity: 0.3;
 }
